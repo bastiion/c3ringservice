@@ -1,5 +1,6 @@
-// connect to our socket server
-var socket = io.connect('http://172.22.99.112:2337/');
+// connect to our socket serveR
+var port = 2337;
+var socket = io.connect(window.location.hostname+ ':' + port);
 
 var app = app || {};
 
